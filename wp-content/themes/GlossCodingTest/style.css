@@ -1,0 +1,557 @@
+/*
+Theme Name: Gloss Coding Test
+Theme URI:
+Author: Andrianico Taguba
+Author URI:
+Description: For Coding test purposes only
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap')
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {max-width: 100%}
+
+.container {}
+
+/* TOP BAR*/
+
+.topbar {
+    margin: 17px 15.60% 0;
+    text-align: right;
+    color: #D70646;
+    opacity: 1;
+    font-size: 18px;
+}
+
+.topbar i:last-of-type {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .topbar {
+        margin: 27px 8.6% 0;
+        font-size: 30px;
+    }
+}
+
+/* HEADER */
+
+.logo {
+    font-size: 35px;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-left: 15.6%;
+    color: #000000;
+    position: relative;
+    top: -23px;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+nav {
+    font-family: roboto;
+    font-weight: 500;
+    margin-right: 15.6%;
+    height: 45px;
+    color: #707070;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: roboto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    padding: 14px 0;
+    color: #707070;
+}
+
+#menu-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.SignIn {
+    border: 2px solid #D70646;
+    padding: 14px 50px;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #D70646;
+    font-weight: 500;
+    border-radius: 4px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    
+}
+
+.SignIn a {margin: 0}
+
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .logo {font-size: 50px; margin-left: 0; top: 0;}
+    
+    #menu-main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .menu-item {
+        margin-bottom: 15px;
+    }
+    
+    nav {
+        font-weight: 700; 
+        margin-right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1; 
+        margin-top: 32px;
+    }
+    nav a {
+        margin-right: 0;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    .SignIn {margin-top: 25px;}
+}
+
+/* HERO SECTION */
+.hero {
+    height: 641px;
+/*    background-image: url(./img/office_meeting3-1.png);*/
+    position: relative;
+    }
+
+.hero:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.4);
+}
+
+.HeroContent {
+    position: relative;
+    left: 15.6%;
+    top: 165px;
+    width: 620px;
+}
+
+.HeroContent h1 {
+    color: #ffffff;
+    font-size: 64px;
+    font-family: roboto;
+    font-weight: 500;
+}
+
+.HeroContent p {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: roboto thin;
+    width: 579px;
+    margin-top: 45px;
+    
+}
+
+.CTAbtn {
+    background-color: #D70646;
+    color: #ffffff;
+    font-size: 30px;
+/*    font-weight: bold;*/
+    border-radius: 5px;
+    padding: 23px 10px;
+    border: none;
+    margin-top: 26px;
+    width: 588px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: roboto;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .hero {
+        height: 644px;
+        margin-top: 40px;
+        overflow: hidden;
+        background-position: 76% 24%;
+    }
+    .HeroContent {
+        left: 10%;
+        top: 44px;
+        width: 100%;
+    }
+    .HeroContent p {
+        width: 75%;
+        letter-spacing: 1px;
+        margin-top: -25px;
+    }
+    
+    .CTAbtn {width: 82%; padding: 30px 0;}
+    
+    .hero:before {
+        background: rgba(0,0,0,.6);
+    }
+}
+
+/* BROWSE COURSES SECTION */
+
+.BrowseCourses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 28px;
+    
+}
+
+.LeftBCourses {
+    width: 620px;
+    margin-left: 15.6%;
+}
+
+.RightBCourses {
+    width: 1000px;
+}
+
+.RightBCourses h2, .RightBCourses p {
+    margin-left: 57px;
+    width: 624px;
+}
+
+.RightBCourses h2 {
+    margin-top: 68px;
+    font-family: roboto medium;
+    font-size: 30px;
+}
+
+.RightBCourses p {
+    color: #7E7E7E;
+    font-size: 18px;
+    margin-left: 57px;
+}
+
+.BCoursesBtn {
+    background-color: #D70646;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: roboto regular;
+    border-radius: 5px;
+    padding: 20px 58px;
+    border: none;
+    margin-top: 14px;
+    margin-left: 57px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 677px) and (min-width: 480px) {
+    .BrowseCourses {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .LeftBCourses {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .RightBCourses {
+        width: 100%;
+    }
+    .RightBCourses h2 {
+        margin-top: 50px;
+        width: 90%;
+    }
+    .RightBCourses p {
+        width: 80%;
+    }
+    .BCoursesBtn {
+        padding: 20px 30px;
+    }
+}
+
+/* LEARN MORE SECTION */
+
+.LearnMore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #202020;
+}
+
+.LeftLearnMore h2 {
+    font-weight: medium;
+    color: #ffffff;
+}
+
+.LeftLearnMore p {
+    margin-top: 43px;
+    color: #7E7E7E;
+    font-family: roboto;
+    font-size: 18px;
+}
+
+.LearnMoreBtn {
+    margin-top: 43px;
+    background-color: #D70646;
+    color: #ffffff;
+    padding: 20px 80px;
+    margin-left: 15.6%;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: roboto;
+    border-radius: 5px;
+}
+
+.RightLearnMore {
+    background-image: url(./img/team.png);
+}
+
+@media screen and (min-width: 768px) {
+    .LearnMore {
+        height: 560px;
+        margin-top: 62px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .LeftLearnMore {width: 49.58%; text-align: left;}
+    
+    .LeftLearnMore h2 {
+        font-size: 40px; 
+        margin-left: 15.6%;
+        margin-top: 97px;
+    }    
+    
+    .LeftLearnMore p {
+        margin-top: 43px;
+        margin-left: 15.6%;
+        width: 582px;
+    }
+    
+    .RightLearnMore { width: 50.42%; }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .LearnMore {
+        margin-top: 50px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;    
+    }
+    .LeftLearnMore {
+        height: 200px;
+        text-align: center;
+        margin: 50px 0;
+    }
+    .LeftLearnMore h2 {font-size: 35px;}
+    
+    .LeftLearnMore p {
+        margin-top: 43px;
+        padding: 0 30px;
+        font-size: 22px;
+        }
+    
+    .LearnMoreBtn {margin-left: 0; margin-top: 25px;}
+
+    .RightLearnMore {
+        height: 92vh;
+        position: relative;
+        background-repeat: no-repeat;
+        top: 270px;
+    }
+}
+
+/* MEMBERS SECTION */
+
+.members {
+    margin: 0 auto;
+}
+
+.members h2 {
+    text-align: center;
+    margin-top: 76px;
+    font-size: 40px;
+}
+
+.members p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #7E7E7E;
+    
+}
+
+.memberslist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 15px;    
+    -webkit-box-pack: center;    
+    -ms-flex-pack: center;    
+    justify-content: center;    
+}
+
+.memberscontent {
+    text-align: center;
+}
+
+@media screen and (max-width:767px) and (min-width:480px) {
+    
+    .memberscontent {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(50% - 1rem);
+        flex: 0 1 calc(50% - 1rem);
+    }
+    .memberslist {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .memberscontent {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(25% - 1rem);
+        flex: 0 1 calc(25% - 1rem);
+    }
+    .memberslist {
+        margin: 50px 300px;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #D70646;
+    color: white;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+}
+
+.footerdesc {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+.ctabtn {
+    border: 2px solid #ffffff;
+    padding: 23px 50px;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .footerdesc {
+        margin: 75px 0;
+    }
+    
+    .ctabtn {
+        margin-bottom: 0;
+    }
+}
+
+/* BOTTOM FOOTER */
+.bottomfooter small {
+    line-height: 2;
+}
+
+.copyright {
+    color: #7E7E7E;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    padding: 1rem 0;
+    
+}
+
+
+
